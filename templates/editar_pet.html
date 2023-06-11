@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Pet</title>
+</head>
+<body>
+    <h1>Editar Pet</h1>
+    <a href="/index">Página Inicial</a>
+    <br>
+    <form method="POST" action="/editar-pet/{{ id }}">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="{{ pet['nome'] }}" required>
+        <br>
+        <label for="raca">Raça:</label>
+        <input type="text" name="raca" id="raca" value="{{ pet['raca'] }}" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" value="{{ pet['idade'] }}" required>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

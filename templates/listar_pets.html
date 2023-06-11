@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Pets</title>
+</head>
+<body>
+    <h1>Lista de Pets</h1>
+    <br>
+    <ul>
+        {% for pet in pets %}
+        <li>
+            <a href="/ver-pet?id={{ loop.index0 }}">{{ loop.index0 }} - {{ pet['nome'] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/index">Página Inicial</a>
+</body>
+</html>

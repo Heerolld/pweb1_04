@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Pets</title>
+</head>
+<body>
+    <h1>Cadastro de Pet</h1>
+    
+    <form method="POST" action="/cadastro-pets">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br>
+        <label for="raca">Raça:</label>
+        <input type="text" name="raca" id="raca" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" required>
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+    <a href="/index">Página Inicial</a>
+    
+</body>
+</html>
